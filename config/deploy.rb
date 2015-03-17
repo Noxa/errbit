@@ -19,8 +19,6 @@ set :pty, true
 set :ssh_options, forward_agent: true
 
 set :linked_files, fetch(:linked_files, []) + %w(
-  .env
-  config/newrelic.yml
   config/unicorn.rb
 )
 
