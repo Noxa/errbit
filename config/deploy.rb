@@ -18,9 +18,7 @@ set :keep_releases, 5
 set :pty, true
 set :ssh_options, forward_agent: true
 
-set :linked_files, fetch(:linked_files, []) + %w(
-  config/unicorn.rb
-)
+set :linked_files, fetch(:linked_files, []) + %w()
 
 set :linked_dirs, fetch(:linked_dirs, []) + %w(
   log
